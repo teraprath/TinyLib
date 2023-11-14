@@ -19,7 +19,7 @@
 
 ## Implementation
 
-You can see the latest version [here](https://github.com/teraprath/Lobby/releases/latest).
+You can see the latest version [here](https://github.com/teraprath/TinyLib/releases/latest).
 
 **Using Maven:**
 
@@ -36,7 +36,7 @@ You can see the latest version [here](https://github.com/teraprath/Lobby/release
 <dependency>
     <groupId>com.github.teraprath</groupId>
     <artifactId>TinyLib</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>VERSION</version>
 </dependency>
 ````
 
@@ -48,7 +48,7 @@ repositories {
 ````
 ````
 dependencies {
-    implementation 'com.github.teraprath:Lobby:1.0-SNAPSHOT'
+    implementation 'com.github.teraprath:Lobby:VERSION'
 }
 ````
 
