@@ -52,4 +52,4 @@ dependencies {
 }
 ````
 
-Visit [wiki](https://github.com/teraprath/TinyLib/wiki/) page to see usage guide.
+Visit [wiki](https://github.com/teraprath/TinyLib/wiki/Docs) page to see usage guide.
