@@ -51,5 +51,3 @@ dependencies {
     implementation 'com.github.teraprath:Lobby:VERSION'
 }
 ````
-
-Visit [wiki](https://github.com/teraprath/TinyLib/wiki/Docs) page to see usage guide.
