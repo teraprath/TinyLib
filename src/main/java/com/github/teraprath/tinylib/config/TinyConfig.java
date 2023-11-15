@@ -10,7 +10,7 @@ import java.io.IOException;
 
 public abstract class TinyConfig {
 
-    private final JavaPlugin plugin;
+    protected final JavaPlugin plugin;
     private final String fileName;
     private File file;
     private FileConfiguration config;
@@ -36,13 +36,14 @@ public abstract class TinyConfig {
 
     public void save() {
         try {
+            onPreSave(config);
             config.save(file);
-            reload();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
 
     public abstract void onLoad(FileConfiguration config);
+    public abstract void onPreSave(FileConfiguration config);
 
 }

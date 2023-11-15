@@ -26,6 +26,11 @@ public class Language extends TinyConfig {
         });
     }
 
+    @Override
+    public void onPreSave(FileConfiguration config) {
+
+    }
+
     public String getMessage(@Nonnull String key) {
         return this.messages.get(key);
     }
