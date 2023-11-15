@@ -1,4 +1,4 @@
-package com.github.teraprath.tiny.lib.command;
+package com.github.teraprath.tinylib.command;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

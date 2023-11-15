@@ -1,6 +1,6 @@
-package com.github.teraprath.tiny.lib.lang;
+package com.github.teraprath.tinylib.lang;
 
-import com.github.teraprath.tiny.lib.title.TinyText;
+import com.github.teraprath.tinylib.text.TinyText;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 

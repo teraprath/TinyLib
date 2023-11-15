@@ -1,4 +1,4 @@
-package com.github.teraprath.tiny.lib.sql;
+package com.github.teraprath.tinylib.sql;
 
 import javax.annotation.Nonnull;
 import java.util.*;

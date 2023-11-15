@@ -1,4 +1,4 @@
-package com.github.teraprath.tiny.lib.sql;
+package com.github.teraprath.tinylib.sql;
 
 public enum SQLDataType {
 

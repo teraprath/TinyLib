@@ -1,4 +1,4 @@
-package com.github.teraprath.tiny.lib.title;
+package com.github.teraprath.tinylib.text;
 
 import org.bukkit.ChatColor;
 

@@ -1,4 +1,4 @@
-package com.github.teraprath.tiny.lib.item;
+package com.github.teraprath.tinylib.item;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
@@ -18,7 +18,7 @@ public class TinySkull {
         this.itemStack.setItemMeta(meta);
     }
 
-    public ItemStack getItemStack() {
+    public ItemStack get() {
         return itemStack;
     }
 }

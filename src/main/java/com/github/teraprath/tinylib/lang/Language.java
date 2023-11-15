@@ -1,6 +1,6 @@
-package com.github.teraprath.tiny.lib.lang;
+package com.github.teraprath.tinylib.lang;
 
-import com.github.teraprath.tiny.lib.config.TinyConfig;
+import com.github.teraprath.tinylib.config.TinyConfig;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.jetbrains.annotations.NotNull;

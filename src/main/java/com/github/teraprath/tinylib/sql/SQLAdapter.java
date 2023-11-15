@@ -1,4 +1,4 @@
-package com.github.teraprath.tiny.lib.sql;
+package com.github.teraprath.tinylib.sql;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -121,6 +121,7 @@ public abstract class SQLAdapter {
 
     public void addTable(@Nonnull SQLTable table) {
         this.tables.put(table.getName(), table);
+        commit(table.toString());
     }
 
     public SQLTable getTable(@Nonnull String name) {
@@ -274,20 +275,6 @@ public abstract class SQLAdapter {
             throw new RuntimeException(e);
         }
         return result;
-    }
-
-    public void createTables() {
-        this.connection = getConnection();
-        this.tables.forEach(((string, table) -> {
-            commit(table.toString());
-        }));
-        if (this.hasConnection()) {
-            try {
-                this.connection.close();
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            }
-        }
     }
 
     private Connection getConnection() {

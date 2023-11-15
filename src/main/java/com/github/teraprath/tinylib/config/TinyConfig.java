@@ -1,4 +1,4 @@
-package com.github.teraprath.tiny.lib.config;
+package com.github.teraprath.tinylib.config;
 
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;

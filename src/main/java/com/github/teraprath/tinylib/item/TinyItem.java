@@ -1,4 +1,4 @@
-package com.github.teraprath.tiny.lib.item;
+package com.github.teraprath.tinylib.item;
 
 import net.kyori.adventure.text.Component;
 import org.bukkit.Material;
@@ -8,6 +8,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import javax.annotation.Nonnull;
+import java.util.ArrayList;
 import java.util.List;
 
 public class TinyItem {
@@ -20,12 +21,7 @@ public class TinyItem {
         this.meta = itemStack.getItemMeta();
     }
 
-    public TinyItem setBaseItemStack(@Nonnull ItemStack itemStack) {
-        this.itemStack = itemStack;
-        return this;
-    }
-
-    public TinyItem setBaseItemMeta(@Nonnull ItemMeta itemMeta) {
+    public TinyItem setItemMeta(@Nonnull ItemMeta itemMeta) {
         this.meta = itemMeta;
         return this;
     }
@@ -45,8 +41,12 @@ public class TinyItem {
         return this;
     }
 
-    public TinyItem setLore(@Nonnull List<Component> list) {
-        this.meta.lore(list);
+    public TinyItem setLore(@Nonnull String... strings) {
+        List<Component> lore = new ArrayList<>();
+        for (String string : strings) {
+            lore.add(Component.text(string));
+        }
+        this.meta.lore(lore);
         return this;
     }
 
