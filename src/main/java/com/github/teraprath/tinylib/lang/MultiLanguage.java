@@ -45,6 +45,12 @@ public class MultiLanguage {
         return this;
     }
 
+    public void addLocale(@Nonnull String locale) {
+        Language language = new Language(plugin, folderName + "/" + locale.toLowerCase());
+        language.init();
+        this.locales.put(locale, language);
+    }
+
     public void reload() {
         this.locales.forEach((locale, language) -> {
             language.reload();
