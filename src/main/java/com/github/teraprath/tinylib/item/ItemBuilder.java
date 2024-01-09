@@ -11,37 +11,37 @@ import javax.annotation.Nonnull;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TinyItem {
+public class ItemBuilder {
 
     private ItemStack itemStack;
     private ItemMeta meta;
 
-    public TinyItem(@Nonnull Material material) {
+    public ItemBuilder(@Nonnull Material material) {
         this.itemStack = new ItemStack(material);
         this.meta = itemStack.getItemMeta();
     }
 
-    public TinyItem setItemMeta(@Nonnull ItemMeta itemMeta) {
+    public ItemBuilder setItemMeta(@Nonnull ItemMeta itemMeta) {
         this.meta = itemMeta;
         return this;
     }
 
-    public TinyItem setAmount(int amount) {
+    public ItemBuilder setAmount(int amount) {
         this.itemStack.setAmount(amount);
         return this;
     }
 
-    public TinyItem setType(@Nonnull Material material) {
+    public ItemBuilder setType(@Nonnull Material material) {
         this.itemStack.setType(material);
         return this;
     }
 
-    public TinyItem setName(@Nonnull String displayName) {
+    public ItemBuilder setName(@Nonnull String displayName) {
         this.meta.displayName(Component.text(displayName));
         return this;
     }
 
-    public TinyItem setLore(@Nonnull String... strings) {
+    public ItemBuilder setLore(@Nonnull String... strings) {
         List<Component> lore = new ArrayList<>();
         for (String string : strings) {
             lore.add(Component.text(string));
@@ -50,32 +50,37 @@ public class TinyItem {
         return this;
     }
 
-    public TinyItem setUnbreakable(boolean unbreakable) {
+    public ItemBuilder setUnbreakable(boolean unbreakable) {
         this.meta.setUnbreakable(unbreakable);
         return this;
     }
 
-    public TinyItem addEnchant(@Nonnull Enchantment enchantment, int level) {
+    public ItemBuilder addEnchant(@Nonnull Enchantment enchantment, int level) {
         this.meta.addEnchant(enchantment, level, true);
         return this;
     }
 
-    public TinyItem removeEnchant(@Nonnull Enchantment enchantment) {
+    public ItemBuilder removeEnchant(@Nonnull Enchantment enchantment) {
         this.meta.removeEnchant(enchantment);
         return this;
     }
 
-    public TinyItem addItemFlags(ItemFlag... flags) {
+    public ItemBuilder addItemFlags(ItemFlag... flags) {
         this.meta.addItemFlags(flags);
         return this;
     }
 
-    public TinyItem removeItemFlags(ItemFlag... flags) {
+    public ItemBuilder removeItemFlags(ItemFlag... flags) {
         this.meta.removeItemFlags(flags);
         return this;
     }
 
-    public ItemStack get() {
+    public ItemBuilder setCustomModelData(int data) {
+        this.meta.setCustomModelData(data);
+        return this;
+    }
+
+    public ItemStack build() {
         this.itemStack.setItemMeta(this.meta);
         return this.itemStack;
     }

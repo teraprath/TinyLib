@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d1cc11f-b826-4acf-923c-dd4fcfb3827a" name="Changes" comment="" />
+    <list default="true" id="5d1cc11f-b826-4acf-923c-dd4fcfb3827a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/text/TextFormat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/config/TinyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/config/ConfigHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/item/TinyItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/item/ItemBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/item/TinySkull.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/item/SkullBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/lang/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/lang/Language.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/lang/MultiLanguage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/sql/SQLAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/sql/SQLHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/sql/SQLTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/sql/SQLTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/text/TinyText.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,13 +34,19 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/nyx/Documents/Repos/TinyLib/src/main/java/com/github/teraprath/tinylib"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

@@ -1,7 +1,7 @@
 package com.github.teraprath.tinylib.sql;
 
 import javax.annotation.Nonnull;
-import java.util.*;
+import java.util.ArrayList;
 
 public class SQLTable {
 

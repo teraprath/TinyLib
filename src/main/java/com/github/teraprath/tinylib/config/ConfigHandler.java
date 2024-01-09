@@ -1,5 +1,6 @@
 package com.github.teraprath.tinylib.config;
 
+
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -8,14 +9,14 @@ import javax.annotation.Nonnull;
 import java.io.File;
 import java.io.IOException;
 
-public abstract class TinyConfig {
+public abstract class ConfigHandler {
 
     protected final JavaPlugin plugin;
     private final String fileName;
     private File file;
     private FileConfiguration config;
 
-    public TinyConfig(@Nonnull JavaPlugin plugin, @Nonnull String fileName) {
+    public ConfigHandler(@Nonnull JavaPlugin plugin, @Nonnull String fileName) {
         this.plugin = plugin;
         this.fileName = fileName + ".yml";
     }

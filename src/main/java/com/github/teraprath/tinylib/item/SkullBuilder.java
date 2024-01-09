@@ -7,18 +7,18 @@ import org.bukkit.inventory.meta.SkullMeta;
 
 import javax.annotation.Nonnull;
 
-public class TinySkull {
+public class SkullBuilder {
 
     private final ItemStack itemStack;
 
-    public TinySkull(@Nonnull String owner) {
+    public SkullBuilder(@Nonnull String owner) {
         this.itemStack = new ItemStack(Material.PLAYER_HEAD);
         SkullMeta meta = (SkullMeta) this.itemStack.getItemMeta();
         meta.setOwningPlayer(Bukkit.getOfflinePlayer("owner"));
         this.itemStack.setItemMeta(meta);
     }
 
-    public ItemStack get() {
+    public ItemStack build() {
         return itemStack;
     }
 }

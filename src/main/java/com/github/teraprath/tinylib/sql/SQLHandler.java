@@ -8,29 +8,29 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.HashMap;
 
-public abstract class SQLAdapter {
+public abstract class SQLHandler {
 
     protected final JavaPlugin plugin;
     protected final SQLAuth auth;
-    private Connection connection;
+    protected Connection connection;
     private final HashMap<String, SQLTable> tables = new HashMap<>();
     private boolean debug;
 
-    public SQLAdapter(@Nonnull JavaPlugin plugin, @Nonnull SQLAuth auth) {
+    public SQLHandler(@Nonnull JavaPlugin plugin, @Nonnull SQLAuth auth) {
         this.plugin = plugin;
         this.auth = auth;
     };
 
     public void connect() {
         this.connection = getConnection();
-        onConnect();
+        this.onConnect();
     }
 
     public void disconnect() {
         try {
             if (this.hasConnection()) {
                 this.connection.close();
-                onDisconnect();
+                this.onDisconnect();
             }
         } catch (SQLException e) {
             e.printStackTrace();
