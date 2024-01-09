@@ -48,6 +48,6 @@ repositories {
 ````
 ````
 dependencies {
-    implementation 'com.github.teraprath:Lobby:VERSION'
+    implementation 'com.github.teraprath:TinyLib:VERSION'
 }
 ````
