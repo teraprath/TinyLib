@@ -1,6 +1,7 @@
 package com.github.teraprath.tinylib.lang;
 
-import com.github.teraprath.tinylib.text.TextFormat;
+import com.github.teraprath.tinylib.config.ConfigHandler;
+import com.github.teraprath.tinylib.text.TextUtils;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -58,7 +59,7 @@ public class Language extends ConfigHandler {
                         }
                     });
 
-                    this.messages.put(key, TextFormat.colorize(result.get()));
+                    this.messages.put(key, TextUtils.colorize(result.get()));
                 }
             }
         }
