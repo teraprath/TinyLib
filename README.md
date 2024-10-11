@@ -11,7 +11,7 @@
 ## Features
 
 - Easy to use and lightweight
-- MySQL Integration
+- MySQL + SQLite3 Integration
 - Configuration files
 - Multi-Language
 - Easy hex color and placeholder formatting
