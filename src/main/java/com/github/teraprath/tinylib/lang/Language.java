@@ -1,6 +1,5 @@
 package com.github.teraprath.tinylib.lang;
 
-import com.github.teraprath.tinylib.config.ConfigHandler;
 import com.github.teraprath.tinylib.text.TextFormat;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;

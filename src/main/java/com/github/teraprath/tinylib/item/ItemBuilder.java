@@ -21,6 +21,11 @@ public class ItemBuilder {
         this.meta = itemStack.getItemMeta();
     }
 
+    public ItemBuilder(@Nonnull ItemStack itemStack) {
+        this.itemStack = itemStack;
+        this.meta = itemStack.getItemMeta();
+    }
+
     public ItemBuilder setItemMeta(@Nonnull ItemMeta itemMeta) {
         this.meta = itemMeta;
         return this;

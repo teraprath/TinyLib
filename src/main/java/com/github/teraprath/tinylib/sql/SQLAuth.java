@@ -1,21 +1,27 @@
 package com.github.teraprath.tinylib.sql;
 
 import javax.annotation.Nonnull;
+import java.io.File;
 
 public class SQLAuth {
 
-    private final String host;
-    private final int port;
-    private final String database;
-    private final String user;
-    private final String password;
+    private String host;
+    private int port;
+    private String database;
+    private String user;
+    private String password;
+    private File file;
 
-    public SQLAuth(@Nonnull String host, @Nonnull int port, @Nonnull String database, @Nonnull String user, @Nonnull String password) {
+    public SQLAuth(String host, int port, String database, String user, String password) {
         this.host = host;
         this.port = port;
         this.database = database;
         this.user = user;
         this.password = password;
+    }
+
+    public SQLAuth(@Nonnull File file) {
+        this.file = file;
     }
 
     public String getHost() {
@@ -37,4 +43,6 @@ public class SQLAuth {
     public String getUser() {
         return user;
     }
+
+    public File getFile() { return file; }
 }

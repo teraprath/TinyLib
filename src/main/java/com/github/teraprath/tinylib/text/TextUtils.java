@@ -6,7 +6,7 @@ import javax.annotation.Nonnull;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class TextFormat {
+public class TextUtils {
 
     public static String colorize(@Nonnull String message) {
         Pattern pattern = Pattern.compile("<#[a-fA-F0-9]{6}>");

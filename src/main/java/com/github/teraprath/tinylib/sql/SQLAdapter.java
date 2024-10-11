@@ -8,16 +8,18 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.HashMap;
 
-public abstract class SQLHandler {
+public abstract class SQLAdapter {
 
     protected final JavaPlugin plugin;
+    private final SQLType type;
     protected final SQLAuth auth;
     protected Connection connection;
     private final HashMap<String, SQLTable> tables = new HashMap<>();
     private boolean debug;
 
-    public SQLHandler(@Nonnull JavaPlugin plugin, @Nonnull SQLAuth auth) {
+    public SQLAdapter(@Nonnull JavaPlugin plugin, @Nonnull SQLType type, SQLAuth auth) {
         this.plugin = plugin;
+        this.type = type;
         this.auth = auth;
     };
 
@@ -48,7 +50,7 @@ public abstract class SQLHandler {
     public void commit(String statement) {
         try {
             PreparedStatement st = this.connection.prepareStatement(statement);
-            if (debug) { plugin.getLogger().info("[MySQL] " + statement); }
+            if (debug) { plugin.getLogger().info("[SQL] " + statement); }
             st.execute();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -58,7 +60,7 @@ public abstract class SQLHandler {
     public ResultSet query(String statement) {
         try {
             PreparedStatement st = this.connection.prepareStatement(statement);
-            if (debug) { plugin.getLogger().info("[MySQL] " + statement); }
+            if (debug) { plugin.getLogger().info("[SQL] " + statement); }
             return st.executeQuery();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -279,7 +281,11 @@ public abstract class SQLHandler {
 
     private Connection getConnection() {
         try {
-            return DriverManager.getConnection("jdbc:mysql://" + auth.getHost() + ":" + auth.getPort() + "/" + auth.getDatabase() + "?autoReconnect=true", auth.getUser(), auth.getPassword());
+            if (this.type.equals(SQLType.SQLITE)) {
+                return DriverManager.getConnection(SQLType.SQLITE + auth.getFile().getPath());
+            } else {
+                return DriverManager.getConnection(SQLType.MYSQL + auth.getHost() + ":" + auth.getPort() + "/" + auth.getDatabase() + "?autoReconnect=true", auth.getUser(), auth.getPassword());
+            }
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

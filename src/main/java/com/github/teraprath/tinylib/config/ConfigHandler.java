@@ -1,6 +1,5 @@
 package com.github.teraprath.tinylib.config;
 
-
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
