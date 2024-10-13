@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d1cc11f-b826-4acf-923c-dd4fcfb3827a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/gui/Gui.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/gui/GuiIcon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/gui/GuiListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/gui/VillagerGui.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/lang/Lang.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/config/ConfigHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/config/ConfigHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/item/ItemBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/item/ItemBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/item/SkullBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/item/SkullBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/lang/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/lang/Language.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/sql/SQLAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/sql/SQLAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/sql/SQLAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/sql/SQLAuth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/sql/SQLColumn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/sql/SQLColumn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/sql/SQLTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/sql/SQLTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/text/TextUtils.java" beforeDir="false" />
-    </list>
+    <list default="true" id="5d1cc11f-b826-4acf-923c-dd4fcfb3827a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
