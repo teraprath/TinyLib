@@ -5,8 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d1cc11f-b826-4acf-923c-dd4fcfb3827a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/gui/Gui.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/gui/GuiIcon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/gui/GuiListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/gui/VillagerGui.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/lang/Lang.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/config/ConfigHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/config/ConfigHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/item/ItemBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/item/ItemBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/item/SkullBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/item/SkullBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/lang/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/lang/Language.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/sql/SQLAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/sql/SQLAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/sql/SQLAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/sql/SQLAuth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/sql/SQLColumn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/sql/SQLColumn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/sql/SQLTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/sql/SQLTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/text/TextUtils.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,17 +49,18 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/terap/Documents/GitHub/TinyLib/src/main/java/com/github/teraprath/tinylib/sql&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/terap/Documents/GitHub/TinyLib/src/main/java/com/github/teraprath/tinylib"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\terap\Documents\GitHub\TinyLib\src\main\java\com\github\teraprath\tinylib" />
       <recent name="C:\Users\terap\Documents\GitHub\TinyLib\src\main\java\com\github\teraprath\tinylib\sql" />
       <recent name="C:\Users\terap\Documents\GitHub\TinyLib\src\main\java\com\github\teraprath\tinylib\item" />
       <recent name="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib" />
