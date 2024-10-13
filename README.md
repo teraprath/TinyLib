@@ -12,9 +12,10 @@
 
 - Easy to use and lightweight
 - MySQL + SQLite3 Integration
-- Configuration files
-- Multi-Language
-- Easy hex color and placeholder formatting
+- Simply create configuration files
+- Multi-Language Support
+- MiniMessage Format Support (Hex Colors, Gradiants & more)
+- Custom Guis & Villager Trades
 - More tiny utilities!
 
 ## Implementation
