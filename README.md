@@ -4,7 +4,7 @@
 [![](https://jitpack.io/v/teraprath/TinyLib.svg)](https://jitpack.io/#teraprath/TinyLib)
 <div>
     <h1>TinyLib</h1>
-    <p>Personal libary for Paper 1.20+<p>
+    <p>All-in-One Libary for Paper 1.20+<p>
 </div>
 </div>
 
@@ -16,11 +16,12 @@
 - Multi-Language Support
 - MiniMessage Format Support (Hex Colors, Gradiants & more)
 - Custom Guis & Villager Trades
+- Easily create round-based Minigames
 - More tiny utilities!
 
 ## Implementation
 
-You can see the latest version [here](https://github.com/teraprath/TinyLib/releases/latest).
+You can get the latest version [here](https://github.com/teraprath/TinyLib/releases/latest).
 
 **Using Maven:**
 
