@@ -3,22 +3,18 @@ package com.github.teraprath.tinylib.game.timer;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitRunnable;
 
-import javax.annotation.Nonnegative;
 import javax.annotation.Nonnull;
 
-public abstract class GameTimer {
+public abstract class EndlessGameTimer {
 
     private final JavaPlugin plugin;
-    private final long initialDurationInMillis;
-    private long remainingTime;
+    private long elapsedTime = 0;
     private BukkitRunnable timerTask;
     private boolean isPaused = false;
     private boolean isRunning = false;
 
-    public GameTimer(@Nonnull JavaPlugin plugin, @Nonnegative long durationInSeconds) {
+    public EndlessGameTimer(@Nonnull JavaPlugin plugin) {
         this.plugin = plugin;
-        this.initialDurationInMillis = durationInSeconds * 1000;
-        this.remainingTime = initialDurationInMillis;
     }
 
     public void start() {
@@ -32,17 +28,14 @@ public abstract class GameTimer {
         timerTask = new BukkitRunnable() {
             @Override
             public void run() {
-                if (remainingTime > 0 && !isPaused) {
+                if (!isPaused) {
                     onTick();
-                    remainingTime -= 1000;
-                } else if (remainingTime <= 0) {
-                    stop();
+                    elapsedTime += 1000;
                 }
             }
         };
-        timerTask.runTaskTimer(plugin, 0, 20);
+        timerTask.runTaskTimer(plugin, 0, 20); // 20 Ticks = 1 Sekunde
     }
-
 
     public void pause() {
         if (!isPaused && isRunning) {
@@ -65,7 +58,7 @@ public abstract class GameTimer {
             timerTask.cancel();
             isRunning = false;
             isPaused = false;
-            remainingTime = initialDurationInMillis;
+            elapsedTime = 0;
         }
     }
 
@@ -76,7 +69,7 @@ public abstract class GameTimer {
             if (timerTask != null) {
                 timerTask.cancel();
             }
-            onComplete();
+            onStop();
         }
     }
 
@@ -91,16 +84,16 @@ public abstract class GameTimer {
         return isRunning && !isPaused;
     }
 
-    public int getRemainingTimeInSeconds() {
-        return (int) (remainingTime / 1000);
+    public int getElapsedTimeInSeconds() {
+        return (int) (elapsedTime / 1000);
     }
 
-    public long getRemainingTime() {
-        return remainingTime;
+    public long getElapsedTime() {
+        return elapsedTime;
     }
 
-    public String getFormattedRemainingTime() {
-        long totalSeconds = getRemainingTimeInSeconds();
+    public String getFormattedElapsedTime() {
+        long totalSeconds = getElapsedTimeInSeconds();
         long hours = totalSeconds / 3600;
         long minutes = (totalSeconds / 60) % 60;
         long seconds = totalSeconds % 60;
@@ -113,17 +106,5 @@ public abstract class GameTimer {
     }
 
     protected abstract void onTick();
-    protected abstract void onComplete();
-
-    public void setDuration(long durationInSeconds) {
-        this.remainingTime = durationInSeconds * 1000;
-
-        if (isRunning && !isPaused) {
-            if (timerTask != null) {
-                timerTask.cancel();
-            }
-            runTimerTask();
-        }
-    }
-
+    protected abstract void onStop();
 }

@@ -6,7 +6,7 @@ import com.github.teraprath.tinylib.game.api.listener.GamePingListener;
 import com.github.teraprath.tinylib.game.api.listener.PlayerJoinListener;
 import com.github.teraprath.tinylib.game.api.listener.PlayerQuitListener;
 import com.github.teraprath.tinylib.game.api.listener.WaitingListener;
-import com.github.teraprath.tinylib.game.api.team.GameTeamManager;
+import com.github.teraprath.tinylib.game.team.GameTeamManager;
 import com.github.teraprath.tinylib.game.api.timer.RunningTimer;
 import com.github.teraprath.tinylib.game.api.timer.ShutdownTimer;
 import com.github.teraprath.tinylib.game.api.timer.WaitingTimer;
@@ -39,7 +39,6 @@ public class GameAPI extends GameStateManager {
         this.runningTimer = new RunningTimer(this);
         this.shutdownTimer = new ShutdownTimer(this);
         this.alive = new ArrayList<>();
-
     }
 
     public GameAPI init() {
