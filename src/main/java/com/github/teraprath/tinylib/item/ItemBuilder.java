@@ -93,6 +93,11 @@ public class ItemBuilder {
         return this;
     }
 
+    public ItemBuilder setLore(@Nonnull List<Component> lore) {
+        this.meta.lore(lore);
+        return this;
+    }
+
     /**
      * Sets whether the item is unbreakable.
      *
