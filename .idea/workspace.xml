@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d1cc11f-b826-4acf-923c-dd4fcfb3827a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/game/api/event/RunningCompleteEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/game/api/event/ShutdownCompleteEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/game/api/event/WaitingCompleteEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/game/api/timer/RunningTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/game/api/timer/RunningTimer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/game/api/timer/ShutdownTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/game/api/timer/ShutdownTimer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/game/api/timer/WaitingTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/game/api/timer/WaitingTimer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/game/api/listener/PlayerQuitListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/game/api/listener/PlayerQuitListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/item/ItemBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/teraprath/tinylib/item/ItemBuilder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

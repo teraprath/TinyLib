@@ -1,7 +1,7 @@
 package com.github.teraprath.tinylib.game.api.listener;
 
 import com.github.teraprath.tinylib.game.api.GameAPI;
-import com.github.teraprath.tinylib.game.api.event.GameJoinEvent;
+import com.github.teraprath.tinylib.game.api.event.GameQuitEvent;
 import com.github.teraprath.tinylib.game.state.GameState;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -29,7 +29,7 @@ public class PlayerQuitListener implements Listener {
             }
         }
 
-        api.getPlugin().getServer().getPluginManager().callEvent(new GameJoinEvent(e.getPlayer(), api));
+        api.getPlugin().getServer().getPluginManager().callEvent(new GameQuitEvent(e.getPlayer(), api));
     }
 
 }

@@ -1,6 +1,7 @@
 package com.github.teraprath.tinylib.item;
 
 import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.format.TextDecoration;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemFlag;
@@ -88,13 +89,26 @@ public class ItemBuilder {
      * @return The current ItemBuilder instance for chaining.
      */
     public ItemBuilder setLore(@Nonnull Component... components) {
-        List<Component> lore = new ArrayList<>(Arrays.asList(components));
+        List<Component> lore = new ArrayList<>();
+        for (Component line : components) {
+            lore.add(line.decoration(TextDecoration.ITALIC, false));
+        }
         this.meta.lore(lore);
         return this;
     }
 
+    /**
+     * Sets the lore (description text) of the item.
+     *
+     * @param lore A list of components that represent each line of the item's lore.
+     * @return The current ItemBuilder instance for chaining.
+     */
     public ItemBuilder setLore(@Nonnull List<Component> lore) {
-        this.meta.lore(lore);
+        List<Component> newLore = new ArrayList<>();
+        lore.forEach(line -> {
+            newLore.add(line.decoration(TextDecoration.ITALIC, false));
+        });
+        this.meta.lore(newLore);
         return this;
     }
 
