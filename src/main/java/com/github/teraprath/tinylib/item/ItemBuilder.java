@@ -78,7 +78,7 @@ public class ItemBuilder {
      * @return The current ItemBuilder instance for chaining.
      */
     public ItemBuilder setName(@Nonnull Component component) {
-        this.meta.displayName(component);
+        this.meta.displayName(component.decoration(TextDecoration.ITALIC, false));
         return this;
     }
 
