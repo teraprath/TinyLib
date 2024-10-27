@@ -2,6 +2,8 @@
 <div align="center">
 
 [![](https://jitpack.io/v/teraprath/TinyLib.svg)](https://jitpack.io/#teraprath/TinyLib)
+[![CodeFactor](https://www.codefactor.io/repository/github/teraprath/tinylib/badge/main)](https://www.codefactor.io/repository/github/teraprath/tinylib/overview/main)
+
 <div>
     <h1>TinyLib</h1>
     <p>All-in-One Libary for Paper 1.20+<p>
