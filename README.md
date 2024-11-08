@@ -15,7 +15,7 @@
 - Easy to use and lightweight
 - MySQL + SQLite3 Integration
 - Simply create configuration files
-- Multi-Language Support
+- Add Multi-Language Support to your Plugin
 - MiniMessage Format Support (Hex Colors, Gradiants & more)
 - Custom Guis & Villager Trades
 - Easily create round-based Minigames
