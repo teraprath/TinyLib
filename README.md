@@ -19,6 +19,7 @@
 - MiniMessage Format Support (Hex Colors, Gradiants & more)
 - Custom Guis & Villager Trades
 - Easily create round-based Minigames
+- Create Regions 
 - More tiny utilities!
 
 ## Implementation
