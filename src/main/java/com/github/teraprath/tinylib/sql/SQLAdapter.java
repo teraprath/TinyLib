@@ -1,7 +1,5 @@
 package com.github.teraprath.tinylib.sql;
 
-import org.bukkit.plugin.java.JavaPlugin;
-
 import javax.annotation.Nonnull;
 import java.sql.*;
 import java.util.Arrays;
@@ -10,22 +8,18 @@ import java.util.HashMap;
 
 public abstract class SQLAdapter {
 
-    protected final JavaPlugin plugin; // The Bukkit plugin instance for logging and context
     private final SQLType type; // The type of SQL database (e.g., MySQL or SQLite)
     protected final SQLAuth auth; // Authentication details for connecting to the database
     protected Connection connection; // The SQL connection object
     private final HashMap<String, SQLTable> tables = new HashMap<>(); // Cache for SQL tables
-    private boolean debug; // Flag to enable debug logging
 
     /**
      * Constructor for the SQLAdapter class, initializing the database connection parameters.
      *
-     * @param plugin The Bukkit plugin instance.
      * @param type   The type of SQL database (e.g., MySQL or SQLite).
      * @param auth   The authentication details required to connect to the database.
      */
-    public SQLAdapter(@Nonnull JavaPlugin plugin, @Nonnull SQLType type, SQLAuth auth) {
-        this.plugin = plugin;
+    public SQLAdapter(@Nonnull SQLType type, SQLAuth auth) {
         this.type = type;
         this.auth = auth;
     };
@@ -53,15 +47,6 @@ public abstract class SQLAdapter {
     }
 
     /**
-     * Enables or disables debug mode for logging SQL statements.
-     *
-     * @param enabled true to enable debug mode, false to disable it.
-     */
-    public void setDebugMode(boolean enabled) {
-        this.debug = enabled;
-    }
-
-    /**
      * Checks if there is an active database connection.
      *
      * @return true if there is a connection; otherwise, false.
@@ -78,7 +63,6 @@ public abstract class SQLAdapter {
     public void commit(String statement) {
         try {
             PreparedStatement st = this.connection.prepareStatement(statement);
-            if (debug) { plugin.getLogger().info("[SQL] " + statement); } // Log the statement if debug is enabled
             st.execute(); // Execute the SQL statement
         } catch (SQLException e) {
             e.printStackTrace(); // Log any SQLException that occurs during execution
@@ -94,7 +78,6 @@ public abstract class SQLAdapter {
     public ResultSet query(String statement) {
         try {
             PreparedStatement st = this.connection.prepareStatement(statement);
-            if (debug) { plugin.getLogger().info("[SQL] " + statement); } // Log the statement if debug is enabled
             return st.executeQuery(); // Execute the SQL query and return the result set
         } catch (SQLException e) {
             e.printStackTrace(); // Log any SQLException that occurs during execution
